@@ -5,7 +5,7 @@ import java.security.NoSuchAlgorithmException;
 public class Encryption 
 {
     public static void encryptString(String input) throws NoSuchAlgorithmException {
-    MessageDigest md = MessageDigest.getInstance("MD5");
+    MessageDigest md = MessageDigest.getInstance("SHA-512");
 
     byte[] messageDigest = md.digest(input.getBytes());
 

@@ -110,7 +110,7 @@ public class AppServlet extends HttpServlet {
   }
 
   private String encryptString(String input) throws NoSuchAlgorithmException {
-    MessageDigest md = MessageDigest.getInstance("MD5");
+    MessageDigest md = MessageDigest.getInstance("SHA-512");
 
     byte[] messageDigest = md.digest(input.getBytes());
 
